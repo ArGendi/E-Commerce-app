@@ -19,9 +19,34 @@ const userSchema = new mongoose.Schema({
         min: 6,
         max: 1024
     },
-    date: {
+    createAt: {
         type: Date,
         default: Date.now,
+    },
+    country: {
+        type: String,
+        required: true,
+        max: 255
+    },
+    region: {
+        type: String,
+        required: true,
+        max: 255
+    },
+    city: {
+        type: String,
+        required: true,
+        max: 255
+    },
+    gender: {
+        type: String,
+        required: true,
+    },
+    mobile: {
+        type: String,
+        required: true,
+        min: 11,
+        max: 255
     }
 })
 
