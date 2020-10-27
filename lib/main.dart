@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
           ),
           debugShowCheckedModeBanner: false,
           title: 'E-Commerce',
-          initialRoute: HomePage.id,
+          initialRoute: LoginPage.id,
           routes: {
             LoginPage.id: (context) => LoginPage(),
             SignUpPage.id: (context) => SignUpPage(),
