@@ -1,7 +1,6 @@
 import 'package:ecommerce/constants.dart';
 import 'package:ecommerce/pages/cart.dart';
 import 'package:ecommerce/pages/categories.dart';
-import 'package:ecommerce/pages/email_requried.dart';
 import 'package:ecommerce/pages/email_verification.dart';
 import 'package:ecommerce/pages/existing_card.dart';
 import 'package:ecommerce/pages/home.dart';
@@ -9,7 +8,6 @@ import 'package:ecommerce/pages/hot_offers.dart';
 import 'package:ecommerce/pages/login.dart';
 import 'package:ecommerce/pages/new_products.dart';
 import 'package:ecommerce/pages/payment.dart';
-import 'package:ecommerce/pages/signup.dart';
 import 'package:ecommerce/pages/single_product.dart';
 import 'package:ecommerce/pages/wishlist.dart';
 import 'package:ecommerce/providers/cart_item.dart';
@@ -54,9 +52,7 @@ class MyApp extends StatelessWidget {
           initialRoute: LoginPage.id,
           routes: {
             LoginPage.id: (context) => LoginPage(),
-            SignUpPage.id: (context) => SignUpPage(),
             EmailVerification.id: (context) => EmailVerification(),
-            EmailRequired.id: (context) => EmailRequired(),
             HomePage.id: (context) => HomePage(),
             SingleProduct.id: (context) => SingleProduct(),
             Categories.id: (context) => Categories(),

@@ -1,6 +1,5 @@
 import 'package:ecommerce/constants.dart';
 import 'package:ecommerce/pages/login.dart';
-import 'package:ecommerce/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
