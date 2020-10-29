@@ -1,5 +1,5 @@
 import 'package:ecommerce/pages/cart.dart';
-import 'package:ecommerce/pages/login.dart';
+import 'package:ecommerce/pages/authentication.dart';
 import 'package:ecommerce/pages/wishlist.dart';
 import 'package:ecommerce/services/auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -187,7 +187,7 @@ class _DrawerListState extends State<DrawerList> {
                     FirebaseAuth.instance.signOut();
                   }
                   else
-                    Navigator.pushNamed(context, LoginPage.id);
+                    Navigator.pushNamed(context, Authentication.id);
                 });
               },
               child: Padding(

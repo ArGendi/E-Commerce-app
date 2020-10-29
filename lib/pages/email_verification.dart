@@ -1,5 +1,5 @@
 import 'package:ecommerce/constants.dart';
-import 'package:ecommerce/pages/login.dart';
+import 'package:ecommerce/pages/authentication.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -57,7 +57,7 @@ class _EmailVerificationState extends State<EmailVerification> {
           Builder(
             builder: (context) => FlatButton(
               onPressed: () async{
-                Navigator.popUntil(context,  ModalRoute.withName(LoginPage.id));
+                Navigator.popUntil(context,  ModalRoute.withName(Authentication.id));
               },
               child: Container(
                 width: size.width,

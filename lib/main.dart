@@ -1,3 +1,4 @@
+import 'package:country_code_picker/country_localizations.dart';
 import 'package:ecommerce/constants.dart';
 import 'package:ecommerce/pages/cart.dart';
 import 'package:ecommerce/pages/categories.dart';
@@ -5,7 +6,7 @@ import 'package:ecommerce/pages/email_verification.dart';
 import 'package:ecommerce/pages/existing_card.dart';
 import 'package:ecommerce/pages/home.dart';
 import 'package:ecommerce/pages/hot_offers.dart';
-import 'package:ecommerce/pages/login.dart';
+import 'package:ecommerce/pages/authentication.dart';
 import 'package:ecommerce/pages/new_products.dart';
 import 'package:ecommerce/pages/payment.dart';
 import 'package:ecommerce/pages/single_product.dart';
@@ -41,6 +42,9 @@ class MyApp extends StatelessWidget {
         ),
       ],
         child: MaterialApp(
+          localizationsDelegates: [
+            CountryLocalizations.delegate,
+          ],
           theme: ThemeData(
             fontFamily: 'Montserrat',
             appBarTheme: AppBarTheme(
@@ -49,9 +53,9 @@ class MyApp extends StatelessWidget {
           ),
           debugShowCheckedModeBanner: false,
           title: 'E-Commerce',
-          initialRoute: LoginPage.id,
+          initialRoute: Authentication.id,
           routes: {
-            LoginPage.id: (context) => LoginPage(),
+            Authentication.id: (context) => Authentication(),
             EmailVerification.id: (context) => EmailVerification(),
             HomePage.id: (context) => HomePage(),
             SingleProduct.id: (context) => SingleProduct(),

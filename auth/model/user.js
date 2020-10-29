@@ -28,7 +28,7 @@ const userSchema = new mongoose.Schema({
         required: true,
         max: 255
     },
-    region: {
+    area: {
         type: String,
         required: true,
         max: 255

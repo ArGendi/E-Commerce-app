@@ -24,6 +24,6 @@ app.use(bodyParser.json())
 app.use(cors())
 
 //Route middleware
-app.use('/api/user', authRoute)
+app.use('/user', authRoute)
 
 app.listen(3000, () => console.log('server is running now..'))
