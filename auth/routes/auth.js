@@ -2,17 +2,9 @@ const router = require('express').Router()
 const User = require('../model/user')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-const validate = require('./validation')
 
-//Validation
-const joi = require('@hapi/joi')
-const { invalid } = require('@hapi/joi')
 
 router.post('/register', async (req, res) => {
-    //Validation
-    const notValid = validate(req.body.email, req.body.password)
-    if(notValid) return res.status(400).send(notValid)
-
     //Check user exist
     const emailExist = await User.findOne({email: req.body.email})
     if(emailExist) return res.status(400).send("Email already exist")
@@ -28,8 +20,9 @@ router.post('/register', async (req, res) => {
         password: hashedPassword,
         country: req.body.country,
         city: req.body.city,
-        area: req.body.region,
+        area: req.body.area,
         gender: req.body.gender,
+        street: req.body.street,
         mobile: req.body.mobile
     })
     try{

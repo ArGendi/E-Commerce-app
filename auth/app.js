@@ -26,4 +26,4 @@ app.use(cors())
 //Route middleware
 app.use('/user', authRoute)
 
-app.listen(3000, () => console.log('server is running now..'))
+app.listen(8000, () => console.log('server is running now..')) 

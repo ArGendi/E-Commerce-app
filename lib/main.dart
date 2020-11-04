@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
           ),
           debugShowCheckedModeBanner: false,
           title: 'E-Commerce',
-          initialRoute: Authentication.id,
+          initialRoute: HomePage.id,
           routes: {
             Authentication.id: (context) => Authentication(),
             EmailVerification.id: (context) => EmailVerification(),

@@ -308,7 +308,7 @@ class _HomePageState extends State<HomePage> {
           else{
             return Center(
               child: CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(kMainColor1),
+                valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
               ),
             );
           }
